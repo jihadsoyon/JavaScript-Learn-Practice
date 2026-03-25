@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 3</title>
+  <style>
+    h1{
+      color: gold;
+    }
+    #food-title{
+      color:green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This is my header</h1>
+  </header>
+  <main>
+   <section>
+    <h1>Welcome to my DOM</h1>
+    <ul>
+      <li>Shafayet</li>
+      <li class="foreign">Bonobash</li>
+      <li id="band">Jalali Set</li>
+      <li>Dom de re baba</li>
+    </ul>
+   </section>
+   <section>
+    <h1 id="food-title">Foods I Love</h1>
+    <ul>
+      <li>Rice</li>
+      <li>Potato</li>
+      <li>Fish</li>
+      <li>Lentils</li>
+      <li class="foreign">Burger</li>
+      <li class="foreign">Pizza</li>
+      <li class="foreign">Pasta</li>
+    </ul>
+
+
+   <h1 id="hehehe">I will do it Insha-allah</h1>
+   <pre id="mindset">Its all about mindset</pre>
+
+   <p class="kam-Kor">kamm korte jaun kam korte jau kam kjorte jau</p>
+   <span class="onek-kam">Prochur kam korte hobe</span>
+
+
+
+
+   </section>
+  </main>
+
+
+
+  <script>
+    //get by id
+
+
+
+    const foodTitleH1 = document.getElementById('food-title');
+    console.log(foodTitleH1.innerText);
+    foodTitleH1.innerText = 'Food that I loved to eat';
+
+   const bandElement = document.getElementById('band');
+  bandElement.innerText = 'Jalali Sleeping Band';
+
+   //get element by className
+   const foreignElement = document.getElementsByClassName('foreign');
+   console.log(foreignElement);
+  
+   for(const element of foreignElement){
+    console.log(element.innerText)
+   }
+  
+  // //get by id 
+
+  const newh1 = document.getElementById("hehehe");
+  console.log(newh1.innerText);
+
+  const mind = document.getElementById("mindset");
+  console.log(mind.innerText);
+  mind.innerText = "Allahuakabr Allahuakabr";
+
+//get by class
+
+const kamKor = document.getElementsByClassName("kam-Kor");
+
+for(const kam of kamKor){
+  console.log(kam.innerText);
+}
+
+const oneKam = document.getElementsByClassName("onek-kam");
+for(const kaam of oneKam){
+  console.log(kaam.innerText);
+}
+
+
+
+
+
+
+
+  </script>
+
+  <script src="./js/hello.js"></script>
+</body>
+</html>

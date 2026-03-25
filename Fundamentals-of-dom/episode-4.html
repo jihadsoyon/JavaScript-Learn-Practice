@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 4</title>
+  <style>
+    h1{
+      color: gold;
+    }
+    li{
+      color: blueviolet;
+    }
+    #food-title{
+      color:green;
+    }
+    .food .foreign{
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+
+<!--ask chatgpt:  Explain nodelist vs htmlcollection in bangla -->
+
+
+  <header>
+    <h1>This is my header</h1>
+  </header>
+  <main>
+   <section id="old-dhaka" class="songs">
+    <h1>Welcome to my DOM</h1>
+    <p>Lorem ipsum dolor <span>oli goli</span> sit amet, consectetur adipisicing <span>Alias</span> elit. Quia, possimus!</p>
+    <h1>Ar rahman <span>Some text</span></h1>
+    <ul>
+      <li>Shafayet</li>
+      <li class="foreign">Bonobash</li>
+      <li id="band">Jalali Set</li>
+      <li class="international">Dubai</li>
+      <li>Dom de re baba</li>
+    </ul>
+   </section>
+   <section class="food">
+    <h1 id="food-title">Foods I Love</h1>
+    <ul>
+      <li>Rice</li>
+      <li>Potato</li>
+      <li>Fish</li>
+      <li>Lentils</li>
+      <li class="foreign">Burger</li>
+      <li class="foreign">Pizza</li>
+      <li class="foreign">Pasta</li>
+    </ul>
+   </section>
+
+
+
+  <ol>
+    <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed similique eaque exercitationem esse provident at qui, <span>repudiandae corrupti neque dolorum nihil!</span> Sunt ipsam nemo, aperiam dolorum minima <span>tempore sequi</span> in?</p></li>
+  </ol>
+
+
+  <h3>one focused year can change your <span>entire bloodline</span></h3>
+
+
+
+
+
+
+
+  </main>
+  <script>
+    //query selectorAll
+    const spanElements = document.querySelectorAll('#old-dhaka p span');
+    for(const span of spanElements){
+      console.log(span.innerText);
+    }
+
+    //query selector
+    const allSpans = document.querySelector('h1 span');
+    console.log(allSpans.innerText);
+  
+    //query selectorAll
+    const ollis = document.querySelectorAll("ol li p span");
+    for(const oll of ollis){
+      console.log(oll.innerText);
+    }
+   
+    //query selector
+   const focuse = document.querySelector('h3 span')
+   console.log(focuse.innerText)
+   
+
+
+
+
+
+
+
+  </script>
+  <script src="./js/hello.js"></script>
+</body>
+</html>

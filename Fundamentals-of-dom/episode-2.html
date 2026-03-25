@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Episode 2</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header>
+    <h1>This is my header</h1>
+  </header>
+  <main>
+    <h1>Welcome to my DOM</h1>
+    <ul>
+      <li><p>Shafayet</p></li>
+      <li>Bonobash</li>
+      <li>Jalali Set</li>
+      <li>Dom de re baba</li>
+    </ul>
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facere.</p>
+    <p>ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facere.</p>
+    <p><b>uyngengveigherogvneruiogerigv'erngfv[hfwngvkbvrsdvgdnvdfvspfvkr  34789t y45 t2364r23 894 28</b></p> -->
+
+   
+    <h3>HTML</h3>
+    <h3>CSS</h3>
+    <h3>JS</h3>
+    <h3>React</h3>
+    <h3>Node</h3>
+    <h3>Next</h3>
+    <h3>MongoDB</h3>
+
+    <pre>In the name of allah i will do it Insha-allah</pre>
+    <pre>I dont know is this happen or not happen but one thing is true i don't stop !</pre>
+  
+  </main>
+
+  <script>
+
+    // console.log('Document Object Model');
+    const student = {
+      name: 'Abul mia',
+      id: 121,
+      study: function (subject){
+          //  console.log('studying subject:', subject);
+      }
+    }
+    console.log(student.name);
+    // console.log(student.study('ICT'));
+
+
+
+    //  document.getElementsByTagName
+    const liCollection = document.getElementsByTagName('li');
+    console.log(liCollection);
+
+     for(const li of liCollection){
+      console.log(li.innerText);
+     }
+  
+    //all h1 tags
+     
+    const allHeadings = document.getElementsByTagName('h1');
+    for(const heading of allHeadings){
+      console.log(heading.innerText);
+    }
+    
+    const allText = document.getElementsByTagName('p');
+   for(const text of allText){
+    console.log(text.innerHTML);
+   }
+
+   const hthrheading = document.getElementsByTagName("h3");
+   console.log(hthrheading[4].innerText);
+   for(const head of hthrheading){
+    console.log(head.innerText);
+   }
+
+  const allpreTag = document.getElementsByTagName("pre");
+ console.log(allpreTag[0].innerText)
+for(const pretag of allpreTag){
+  console.log(pretag.innerText);
+}
+
+  </script>
+  <script src="./js/hello.js"></script>
+</body>
+</html>
