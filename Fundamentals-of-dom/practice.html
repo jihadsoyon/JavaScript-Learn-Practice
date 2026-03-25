@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+</head>
+<body>
+  
+<main>
+    <!-- // task 1 -->
+<div class="greeting">Hello, Jihad!</div>
+
+  <!-- // task 2 -->
+<ul>
+  <li class="fruit">Apple</li>
+  <li class="fruit">Banana</li>
+  <li class="fruit">Mango</li>
+</ul>
+
+  <!-- // task 3 -->
+<div class="card">
+  <h2 class="title">Product Name</h2>
+  <p class="price">৳500</p>
+</div>
+
+  <!-- // task 4 -->
+<p id="status">Pending</p>
+<button id="updateBtn">Update Status</button>
+
+  <!-- // task 5 -->
+<div class="product-card">Shirt</div>
+<div class="product-card">Pants</div>
+<div class="product-card">Shoes</div>
+
+</main>
+
+<script>
+  // task 1
+  const allgreet = document.querySelector('.greeting');
+  console.log(allgreet.innerText)
+
+// task 2
+ const allfruits = document.querySelectorAll('.fruit');
+ for(const fruit of allfruits){
+  console.log(fruit.innerText)
+ }
+
+// task 3
+const allcard = document.querySelector('.card');
+const title = document.querySelector('.title').innerText;
+const price = document.querySelector('.price').innerText;
+console.log(`${title}- ${price}`);
+
+// task 5
+const allProductcard = document.querySelectorAll('.product-card');
+for(const productcard of allProductcard){
+  console.log(productcard.innerText)
+}
+
+</script>
+
+</body>
+</html>
