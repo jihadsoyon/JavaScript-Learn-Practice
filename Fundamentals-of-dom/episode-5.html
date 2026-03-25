@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 5</title>
+  <style>
+    h1{
+      color: gold;
+    }
+    li{
+      color: blueviolet;
+    }
+    #food-title{
+      color:green;
+      /* background-color: lightcyan; */
+    }
+    .bg-red{
+      background-color: red;
+    }
+    .bold{
+      font-weight: 900;
+    }
+    .big{
+      font-size: 5em;
+    }
+    .food .foreign{
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+
+<!--ask chatgpt:  Explain nodelist vs htmlcollection in bangla -->
+
+
+  <header>
+    <h1 id="heder">This is my header</h1>
+  </header>
+  <main>
+   <section id="old-dhaka" class="songs">
+    <h1>Welcome to my DOM</h1>
+    <p>Lorem ipsum dolor <span>oli goli</span> sit amet, consectetur adipisicing <span>Alias</span> elit. Quia, possimus!</p>
+    <h1>Ar rahman <span>Some text</span></h1>
+    <ul>
+      <li>Shafayet</li>
+      <li class="foreign">Bonobash</li>
+      <li id="band" class="">Jalali Set</li>
+      <li class="international">Dubai</li>
+      <li>Dom de re baba</li>
+    </ul>
+   </section>
+   <section class="food">
+    <h1 id="food-title">Foods I Love</h1>
+    <ul>
+      <li>Rice</li>
+      <li>Potato</li>
+      <li>Fish</li>
+      <li>Lentils</li>
+      <li class="foreign">Burger</li>
+      <li class="foreign">Pizza</li>
+      <li class="foreign">Pasta</li>
+    </ul>
+   </section>
+
+
+   <section class="ins">
+    <h1 id="insh">Insha-allah</h1>
+    <ol>
+      <li>Programming</li>
+      <li>Coding</li>
+      <li class="yainsh">Frontend</li>
+      <li class="yainsh">Backend</li>
+      <li class="fullst">Fullstake</li>
+    </ol> 
+
+
+   </section>
+
+
+   
+
+  </main>
+  <script>
+    //query selectorAll
+    const spanElements = document.querySelectorAll('#old-dhaka p span');
+    for(const span of spanElements){
+      console.log(span.innerText);
+    }
+   
+    const foodElement = document.getElementById('food-title');
+    foodElement.innerText = '😬Food Forever😀'
+    
+    foodElement.style.color = 'white';
+    foodElement.style.backgroundColor = 'purple';
+    foodElement.style.borderRadius = '20px';
+    foodElement.style.padding = '40px';
+    foodElement.style.textAlign = 'center';
+    foodElement.classList.add('bg-red')
+    foodElement.classList.remove('bg-red')
+    foodElement.classList.add('bold')
+    foodElement.classList.add('big')
+    foodElement.getAttribute('id')
+    foodElement.getAttribute('class')
+    foodElement.setAttribute('title', 'Title or tooltip by JS')
+
+
+  const mainHeader = document.getElementById('heder');
+  mainHeader.innerText = '⚠️I am the game✅';
+
+
+mainHeader.style.color = 'brown';
+mainHeader.style.backgroundColor = 'greenyellow'
+mainHeader.style.border = '5px solid red'
+mainHeader.style.padding = '50px'
+mainHeader.style.borderRadius = '50px'
+mainHeader.style.textAlign = 'center'
+mainHeader.style.fontSize = '50px'
+mainHeader.setAttribute('title', 'Title or tooltip by JS')
+
+const newHeader =  document.getElementById('insh');
+console.log(newHeader.innerText)
+newHeader.innerText = "✅Insha-allh I will do It🧭"
+
+newHeader.style.backgroundColor = 'green'
+newHeader.style.padding = '50px'
+newHeader.style.textAlign = 'center'
+newHeader.style.borderRadius = '50px'
+newHeader.style.border = '5px solid red'
+newHeader.classList.add('bold')
+newHeader.classList.add('big')
+
+
+const classfull = document.getElementsByClassName('fullst');
+// console.log(classfull.innerText);
+for(const full of classfull){
+  full.innerText = 'Fullstake Developer';
+  full.classList.add('bold');
+    // console.log(full);
+  console.log(full.innerText)
+}
+
+  </script>
+  <script src="./js/hello.js"></script>
+</body>
+</html>
