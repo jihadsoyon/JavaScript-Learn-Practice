@@ -1,11 +1,18 @@
 
+Problem-01: New Price for Eid Sale
+⚠️ Function Name Must be newPrice()
+On the occasion of the upcoming Eid, you want to give a discount on the products in your store. But it is a hassle to calculate the new price of each product separately. So you want to create a function, which will take the original price and the discount% and return the new price.
 
+Input :
+First input: A number which is the original price. currentPrice will be Number
+Second input: A number which is the discount. discount will be Number in %
 
+Output : The function will return the new price after discount. The output can also be a decimal number. 3 places must be shown after the decimal.
 
+Challenge 📢 : If there is no input number, or if the discount amount is less than 0 and greater than 100, then Invalid string will be returned.
 
-
-
-
+Hints 💡: If the currentPrice of a product = 1500 taka and discount = 20%, then:
+Find the discount amount, discount amount = (1500 * 20) / 100 = 300 taka
 
 
 Problem-02: OTP Validation for Zapshift
@@ -27,14 +34,6 @@ If the input is not a String (such as: Number, Array or Object), then Invalid mu
 2. OTP must start with "ph-".
 
 Hints 💡: You can use startsWith() method.
-
-
-
-
-
-
-
-
 
 
 Problem-03: BCS Final Score Calculator
@@ -62,8 +61,6 @@ For skipped questions: 0 points.
 
 
 
-
-
 Problem-04: Upcoming Gono Vote
 ⚠️ Function Name Must be gonoVote()
 You have been given a task to analyze the results of the upcoming referendum. The vote data is stored in an Array where the voters' opinions are either "ha" or "na". Your task is to create a function that will count the votes and see if the "ha" vote is the majority or not.
@@ -78,11 +75,6 @@ Otherwise → false
 
 🚩 Challenge:
 If the input is not an Array (for example: String, Number or Object), then Invalid must be returned as output.
-
-
-
-
-
 
 
 Problem-05: Text Analyzer for an AI Company
