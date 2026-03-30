@@ -30,5 +30,23 @@ Invalid
 
 
 
+Problem-02: OTP Validation for Zapshift
+⚠️ Function Name Must be validOtp()
 
+Zapshift company sends OTP while delivering their product. But some people receive the product using Fraud OTP. So your job is to create a function, which will check if the OTP is correct.
+The function will return a Boolean (true/false). If the input is not in the correct format, it will return Invalid.
+
+Input: The input will be a string.
+
+🚀 Output:
+Boolean will return true or false
+
+🚩 Challenge:
+If the input is not a String (such as: Number, Array or Object), then Invalid must be returned as the output.
+
+💡 Validation Rules:
+1. OTP must be 8 characters (length).
+2. OTP must start with "ph-".
+
+Hints 💡: You can use startsWith() method.
 
