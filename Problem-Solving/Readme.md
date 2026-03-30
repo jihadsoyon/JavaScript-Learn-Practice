@@ -160,7 +160,7 @@ Challenge 📢 : If the input is not a String (e.g. Number, Array or Object), th
 
 Hints 💡: You can use split(), join() methods.
 
-SAMPLE INPUT
+SAMPLE INPUT:
 "I am a little honest person"
 "Hello world"
 "Keep coding keep shining"
@@ -169,7 +169,7 @@ SAMPLE INPUT
 "A quick brown fox"
 " "
 
-SAMPLE OUTPUT
+SAMPLE OUTPUT:
 { longwords: "little", token: 22 }
 { longwords: "Hello", token: 10 }
 { longwords: "shining", token: 21 }
