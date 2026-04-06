@@ -123,18 +123,18 @@ outerFunction();
 
 // Your task:
 
-// Line A → What will be the output?
+// Line A → What will be the output?   Global
 
-// Line B → What will be the output?
+// Line B → What will be the output?   Outer
 
-// Line C → What will be the output?
+// Line C → What will be the output?   Block
 
-// Line D → What will be the output?
+// Line D → What will be the output?   FunctionVar
 
-// Line E → What will be the output?
+// Line E → What will be the output?   Error
 
-// Line F → What will be the output?
+// Line F → What will be the output?   Global
 
-// Line G → What will be the output?
+// Line G → What will be the output?   Error
 
-// Line H → What will be the output?
+// Line H → What will be the output?   Error
