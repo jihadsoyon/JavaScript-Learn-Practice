@@ -1,6 +1,12 @@
 # ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
 
 ---
+## ⚡ Live Link:
+```bash
+https://english-windoww.netlify.app/
+```
+
+
 
 ## ⚡ API Endpoints
 
