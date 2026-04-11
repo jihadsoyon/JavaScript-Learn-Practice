@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Card</title>
+  <style>
+    #card-conatiner{
+      max-width: 1160px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      row-gap: 30px;
+    }
+
+    .all-card{
+      background-color: brown;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 1px 1px gray;
+      height: 100%;
+     
+    }
+    .all-card p{
+      text-align: justify;
+    }
+
+  </style>
+</head>
+<body>
+  <button onclick="allcards()">Click Here</button>
+
+  <div id="card-conatiner">
+   
+  </div>
+
+
+<script src="./pr-card.js"></script>
+</body>
+</html>
