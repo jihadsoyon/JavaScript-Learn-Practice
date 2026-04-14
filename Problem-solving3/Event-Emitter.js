@@ -55,3 +55,34 @@ class EventEmitter {
         return this;
     }
 }
+
+// After pasting the EventEmitter class above, run the following code
+
+const emitter = new EventEmitter();
+
+console.log("=== Event Emitter Test Start ===\n");
+
+// Normal Event
+emitter.on("click", (x, y) => {
+    console.log(`✅ Click event: Position (${x}, ${y})`);
+});
+
+emitter.on("login", (user) => {
+    console.log(`✅ User logged in: ${user}`);
+});
+
+// Once Event
+emitter.once("data", (data) => {
+    console.log("✅ Data received (once only):", data);
+});
+
+// To emit
+emitter.emit("click", 150, 250);
+emitter.emit("login", "jihad");
+
+emitter.emit("data", { id: 101, msg: "Welcome" });
+
+// It will not print again (because of once).
+emitter.emit("data", "second try");
+
+console.log("\n=== Test Completed ===");
