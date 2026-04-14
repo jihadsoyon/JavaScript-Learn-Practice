@@ -52,3 +52,22 @@ clone nested object (no reference)
 deepClone(obj)
 
 JSON.parse cannot be used
+
+8️. Infinite Curry Function
+
+unlimited chaining support করবে
+
+sum(1)(2)(3)(4)() // 10
+
+9️. Event Emitter (Node.js style)
+
+ custom event system বানাও
+
+emitter.on("click", fn)
+emitter.emit("click")
+
+10. Retry API Call with Limit
+
+API fail হলে retry করবে
+
+retry(fetchData, 3)
