@@ -1,73 +1,96 @@
-1️. Deep Flatten Array
+🚀 Advanced JavaScript Problem Solving Collection
 
-No matter how deep the nested array is, make it completely flat
+A curated set of real-world, high-level JavaScript problems to sharpen problem-solving skills and prepare for technical interviews.
+
+🧠 Problem List
+1️⃣ Deep Flatten Array
+
+Flatten an array of any depth into a single-level array.
 
 flatten([1, [2, [3, [4]], 5]])
-// output: [1,2,3,4,5]
+// Output: [1, 2, 3, 4, 5]
+2️⃣ Debounce Function
 
-2️. Debounce Function
-
-Create a function that will execute with a delay if called rapidly
+Delays function execution until after a specified time has passed since the last call.
 
 debounce(fn, 500)
 
-Real use: search input optimization
+📌 Use Case: Search input optimization
 
-3️. Throttle Function
+3️⃣ Throttle Function
 
-Run the function only once in a specified time
+Ensures a function runs at most once in a given time interval.
 
 throttle(fn, 1000)
 
-Real use: scroll event
+📌 Use Case: Scroll / resize events
 
-4️. Custom Promise.all()
+4️⃣ Custom Promise.all()
 
-Implement it yourself
+Implement your own version of Promise.all.
 
 myPromiseAll([p1, p2, p3])
 
-Output: Return the result if all are resolved
+✔️ Returns all resolved values
+❌ Rejects immediately if any promise fails
 
-5️. LRU Cache
+5️⃣ LRU Cache (Least Recently Used)
 
-Implement Least Recently Used cache
+Design a cache system with limited capacity.
 
 const cache = new LRUCache(2)
+
 cache.put(1, 1)
 cache.get(1)
 
-Real use: browser caching
+📌 Use Case: Browser caching, performance optimization
 
-6️. Group By Function
+6️⃣ Group By Function
 
-Group an array
+Group objects in an array based on a key.
 
 groupBy(users, "age")
+7️⃣ Deep Clone Object
 
-7️. Deep Clone Object
-
-clone nested object (no reference)
+Clone deeply nested objects without reference sharing.
 
 deepClone(obj)
 
-JSON.parse cannot be used
+⚠️ Constraint: JSON.parse(JSON.stringify()) is NOT allowed
 
-8️. Infinite Curry Function
+8️⃣ Infinite Curry Function
 
-unlimited chaining support করবে
+Support unlimited function chaining.
 
 sum(1)(2)(3)(4)() // 10
+9️⃣ Event Emitter (Node.js Style)
 
-9️. Event Emitter (Node.js style)
-
- custom event system বানাও
+Create a custom event system.
 
 emitter.on("click", fn)
 emitter.emit("click")
+🔟 Retry API Call with Limit
 
-10. Retry API Call with Limit
-
-API fail হলে retry করবে
+Retry a failed API call up to a certain number of times.
 
 retry(fetchData, 3)
+
+📌 Use Case: Network reliability handling
+
+🎯 هدف (Goal)
+Improve problem-solving skills
+Master JavaScript fundamentals deeply
+Prepare for real-world frontend/backend challenges
+Crack technical interviews 🚀
+💡 Bonus Ideas
+Add unit tests (Jest)
+Convert to TypeScript
+Create visual demos (React)
+Benchmark performance
+
+🛠 Tech Stack
+JavaScript (ES6+)
+Browser APIs
+⭐ Support
+
+If you found this useful, consider giving a ⭐ on your repository!
