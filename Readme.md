@@ -71,18 +71,6 @@ Here are some of my real-world JavaScript projects:
 
 ---
 
-## 📁 Repository Structure
-
-This repository contains:
-
-- Basic to Advanced JavaScript practice
-- DOM manipulation projects
-- API integration examples
-- Problem-solving exercises
-- Real-world mini applications
-
----
-
 ## 🔥 My Learning Philosophy
 
 - Learn → Practice → Build → Repeat  
