@@ -9,47 +9,67 @@ I believe in **learning by building**, and this repository is a reflection of my
 
 ## 🧠 What I Know in JavaScript
 
-### 🔹 Core Concepts
-- Data Types & Variables  
-- Scope (Global, Local, Block)  
-- Hoisting  
-- Closures  
-- Prototypes & Prototypal Inheritance  
-- `this` Keyword  
+### 🔹 Fundamentals
+- Variables → var, let, const 
+- Data Types → string, number, boolean, null, undefined, object
+- Operators → + - * / %, comparison  
+- Condition → if/else, switch
+- Loop → for, while
+- Function → normal function, arrow function
+- Array & Object basics
 
-### 🔹 Functions & Advanced Concepts
-- Call, Apply, Bind  
-- Arrow Functions  
-- Higher-Order Functions  
-- Functional Programming (`map`, `filter`, `reduce`)  
+### 🔹 Intermediate Core
+- Scope & Hoisting
+- Closures (VERY IMPORTANT)
+- this keyword
+- Callback function
+- Array methods map(), filter(), reduce()
+- Destructuring
+- Spread / Rest Operator
+
+### 🔹 DOM & Browser
+- DOM selection (getElementById, querySelector) 
+- Event handling
+- Event bubbling / capturing 
+- Form handling  
+- LocalStorage / SessionStorage
 
 ### 🔹 Asynchronous JavaScript
-- Event Loop & Task Queue  
-- Promises  
-- Async/Await  
-- Fetch API  
+- Call Stack 
+- Event Loop
+- Web APIs
+- Tools: setTimeout, Promise, async/await, fetch API
 
-### 🔹 Modern JavaScript (ES6+)
-- Destructuring  
-- Spread & Rest Operator  
-- Template Literals  
-- Modules (import/export)  
+### 🔹 Advanced JavaScript
+- Closures deep dive
+- Event Loop deep understanding
+- Debounce & Throttle
+- Execution Context
+- Prototype & Inheritance
 
-### 🔹 Browser & Storage
-- DOM (Document Object Model)  
-- Local Storage / Session Storage  
+### 🔹 ES6+ Mastery
+- Arrow functions 
+- Template literals
+- Modules (import/export)
+- Optional chaining ?.
 
-### 🔹 Problem Solving & Logic
-- Algorithms  
-- Data Structures:
-  - Array  
-  - Object  
-  - Map  
-  - Set  
+### 🔹 Error Handling & Debugging
+- try...catch
+- Chrome DevTools
+- Debugging techniques
 
-### 🔹 Software Design
-- Basic Design Patterns  
-- Clean Code Practices  
+### 🔹 Browser APIs & Advanced Concepts
+- Fetch API
+- Storage API
+
+### 🔹 Problem Solving
+- Array problems
+- String problems
+- Logic building
+
+### 🔹 Design Patterns & Architecture
+- Module pattern
+- Clean code
 
 ---
 
@@ -83,7 +103,7 @@ Here are some of my real-world JavaScript projects:
 ## 📈 Current Focus
 
 - Advanced JavaScript concepts  
-- Problem solving (DSA)  
+- Problem solving 
 - Preparing for **MERN Stack Development**  
 - Moving towards **Next.js & TypeScript**  
 
