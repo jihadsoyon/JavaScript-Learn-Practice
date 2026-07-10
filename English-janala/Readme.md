@@ -1,14 +1,14 @@
 # ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
 
 ---
-## ⚡ Live Link:
+## Live Link:
 
 https://english-windoww.netlify.app/
 
 
 
 
-## ⚡ API Endpoints
+## API Endpoints
 
 1. Get ⚡ All Levels
 
