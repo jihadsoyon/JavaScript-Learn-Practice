@@ -27,13 +27,15 @@ function showOnly(id) {
     const addMoney = document.getElementById("add-money");
     const cashOut = document.getElementById("cashout");
     const addMOney = document.getElementById("transfer");
-    const bonus = document.getElementById("bonus")
+    const bonus = document.getElementById("bonus");
+    const payBill = document.getElementById("pay-bill")
 
     // hide everything
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
     addMOney.classList.add("hidden");
     bonus.classList.add("hidden");
+    payBill.classList.add("hidden");
 
     //show the element with exact id
 
