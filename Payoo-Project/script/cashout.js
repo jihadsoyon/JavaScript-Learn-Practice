@@ -18,8 +18,8 @@ let currentBalance = getBalance();
 
     const pin = getvalueFromInput("cashout-pin");
     if(pin === "1234"){
-        alert("Cashout successfull");
-        document.getElementById("balance").innerText = newBalance;
+        alert(`Cashout successfull ${cashoutAmount} Tk. Your account balance ${newBalance}Tk.`);
+        setBalance(newBalance)
     }else{
         alert("invalid Pin");
         return;
