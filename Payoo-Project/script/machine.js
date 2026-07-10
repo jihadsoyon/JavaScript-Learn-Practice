@@ -7,3 +7,11 @@ function getvalueFromInput(id){
     return value;
 }
 
+//
+function getBalance(){
+ const balanceElement = document.getElementById("balance");
+ const balance = balanceElement.innerText;
+ return Number(balance);
+}
+
+ //machine value -> set Balance 
