@@ -4,53 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom Practice</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
+    <header class="w-[80%] mx-auto">
+        <h1 class="text-6xl font-bold text-green-500">Plant Tracker</h1>
+        <div class="grid grid-cols-3 gap-3">
+            <div class="bg-amber-200 p-4">
+                <p>Total</p>
+                <p id="total">0</p>
+            </div>
+            <div class="bg-green-200 p-4">
+                <p>Thrive</p>
+                <p id="thrivingCount">0</p>
+            </div>
+            <div class="bg-red-200 p-4">
+                <p>Struggle</p>
+                <p id="strugglingCount">0</p>
+            </div>
 
-    <div id="maninDiv">
-        <h1>Hello World</h1>
-        <ul>
-            <li>Mango</li>
-            <li>Apple</li>
-            <li>Orange</li>
-        </ul>
-    </div>
-    <!-- <img src="#" alt="img.jpg"> -->
-
-    <p id="count">0</p>
-    <button id="btn">Count</button>
-
-   <div class="products">
-     <div class="produt-cart">
-        <img src="" alt="demo.jpg" class="product-image">
-        <h3 class="category-name">Electronics</h3>
-        <h1 class="product-name">Smart Watch</h1>
-        <div class="product-footer">
-            <span class="product-price">2500</span>
-            <button class="wishlist-btn">❤️</button>
         </div>
-        <button class="add-to-cart-btn">Add to cart</button>
-    </div>
-   
 
-     <div class="produt-cart">
-        <img src="" alt="demo.jpg">
-        <h3 class="category-name">Electronics</h3>
-        <h1 class="product-name">Head Phone</h1>
-        <div class="product-footer">
-            <span class="product-price">4500</span>
-            <button class="wishlist-btn">❤️</button>
-        </div>
-        <button class="add-to-cart-btn">Add to cart</button>
-    </div>
- 
-   </div>
-   <p class="wishCount">0</p>
+    </header>
 
-    <script src="./script.js"></script>
+    <hr class="my-3">
+
+    <main class="w-[80%] mx-auto">
+      <div>
+        <button class="bg-black px-5 py-2 text-white" id="all-filter-btn">All</button>
+        <button class="bg-gray-300 px-5 py-2" id="thriving-filter-btn">Thriving</button>
+        <button class="bg-gray-300 px-5 py-2" id="struggling-filter-btn">Struggling</button>
+      </div>
+
+    </main>
 </body>
 
 </html>
