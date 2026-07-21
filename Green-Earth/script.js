@@ -1,3 +1,12 @@
+
+
+const cateGoriesContainer = document.getElementById("categoriesContainer");
+
+
+
+
+
+
 async function loadCategories() {
     fetch("https://openapi.programming-hero.com/api/categories")
         .then(res => res.json())
@@ -8,7 +17,9 @@ async function loadCategories() {
 
     const res = await fetch("https://openapi.programming-hero.com/api/categories");
     const data = await res.json();
+
     console.log(data);
+    
 
 }
 
