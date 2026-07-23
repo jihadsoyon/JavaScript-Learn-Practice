@@ -93,7 +93,6 @@ Here are some of my real-world JavaScript projects:
 👉 https://pay00.netlify.app/
 
 
-
 ---
 
 ## 🔥 My Learning Philosophy
