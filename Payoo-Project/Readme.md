@@ -4,7 +4,7 @@ A modern Mobile Financial Services (MFS) web application that simulates real-wor
 
 ## 🌐 Live Demo
 
-👉 https://pay00.netlify.app/home.html
+👉  https://pay00.netlify.app/
 
 ---
 
