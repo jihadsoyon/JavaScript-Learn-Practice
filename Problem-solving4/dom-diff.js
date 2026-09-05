@@ -52,7 +52,7 @@ function diff(oldNode, newNode, path = "root") {
 }
 
 // ----------------------
-// ✅ TEST CASE
+// TEST CASE
 // ----------------------
 
 const oldTree = {

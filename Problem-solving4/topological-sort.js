@@ -6,7 +6,7 @@ function resolveDependencies(deps) {
   const result = [];
 
   function dfs(node) {
-    // 🔥 Detect circular dependency
+    // Detect circular dependency
     if (visiting.has(node)) {
       throw new Error(`❌ Circular dependency detected at: ${node}`);
     }
@@ -43,7 +43,7 @@ const deps1 = {
   D: []
 };
 
-console.log("✅ Valid Order:", resolveDependencies(deps1));
+console.log(" Valid Order:", resolveDependencies(deps1));
 // Expected: ['D', 'B', 'C', 'A']
 
 
@@ -51,7 +51,7 @@ console.log("✅ Valid Order:", resolveDependencies(deps1));
 const deps2 = {
   A: ['B'],
   B: ['C'],
-  C: ['A'] // 🔥 cycle here
+  C: ['A'] // cycle here
 };
 
 try {

@@ -37,7 +37,7 @@ function createStore(reducer, preloadedState, enhancer) {
 }
 
 //////////////////////////////////////////////////////
-// 🔥 applyMiddleware (BONUS)
+// applyMiddleware (BONUS)
 
 function applyMiddleware(...middlewares) {
   return (createStore) => (reducer, preloadedState) => {
@@ -62,7 +62,7 @@ function applyMiddleware(...middlewares) {
 }
 
 //////////////////////////////////////////////////////
-// 🔥 Logger Middleware (example)
+// Logger Middleware (example)
 
 const logger = ({ getState }) => (next) => (action) => {
   console.log("Prev State:", getState());
@@ -77,7 +77,7 @@ const logger = ({ getState }) => (next) => (action) => {
 };
 
 //////////////////////////////////////////////////////
-// 🔥 Reducer
+// Reducer
 
 function counterReducer(state = { count: 0 }, action) {
   switch (action.type) {
@@ -96,7 +96,7 @@ function counterReducer(state = { count: 0 }, action) {
 }
 
 //////////////////////////////////////////////////////
-// 🔥 Create Store with Middleware
+// Create Store with Middleware
 
 const store = createStore(
   counterReducer,
@@ -105,14 +105,14 @@ const store = createStore(
 );
 
 //////////////////////////////////////////////////////
-// 🔥 Subscribe
+// Subscribe
 
 const unsubscribe = store.subscribe(() => {
   console.log("Subscriber:", store.getState());
 });
 
 //////////////////////////////////////////////////////
-// 🧪 Dispatch Actions
+// Dispatch Actions
 
 store.dispatch({ type: "INCREMENT" });
 store.dispatch({ type: "INCREMENT" });

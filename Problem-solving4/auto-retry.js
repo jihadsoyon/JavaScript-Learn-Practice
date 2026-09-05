@@ -21,7 +21,7 @@ function retry(fn, retries, delay) {
 }
 
 //////////////
-// 🔥 Demo API (fails first 2 times, then succeeds)
+// Demo API (fails first 2 times, then succeeds)
 
 let count = 0;
 
@@ -31,15 +31,15 @@ function fakeApi() {
     console.log("API Call attempt:", count);
 
     if (count < 3) {
-      reject("API Failed ❌");
+      reject("API Failed ");
     } else {
-      resolve("API Success ✅");
+      resolve("API Success ");
     }
   });
 }
 
 //////////////
-// 🚀 Run
+//  Run
 
 retry(fakeApi, 3, 1000)
   .then((res) => console.log("Result:", res))

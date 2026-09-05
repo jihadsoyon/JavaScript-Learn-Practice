@@ -11,7 +11,7 @@ function memoize(fn, ttl) {
 
       // If not expired → return cached value
       if (now < expiry) {
-        console.log("From Cache ✅");
+        console.log("From Cache");
         return value;
       } else {
         // Expired → delete
@@ -28,13 +28,13 @@ function memoize(fn, ttl) {
       expiry: now + ttl
     });
 
-    console.log("Computed 🚀");
+    console.log("Computed");
     return result;
   };
 }
 
 //////////////////////////////////////////////////////
-// 🔥 Test Function
+// Test Function
 function slowAdd(a, b) {
   console.log("Function Executed...");
   return a + b;
@@ -43,7 +43,7 @@ function slowAdd(a, b) {
 const memoFn = memoize(slowAdd, 3000); // 3 sec TTL
 
 //////////////////////////////////////////////////////
-// 🧪 Test Cases
+// Test Cases
 
 console.log(memoFn(2, 3)); // Computed
 console.log(memoFn(2, 3)); // From Cache
