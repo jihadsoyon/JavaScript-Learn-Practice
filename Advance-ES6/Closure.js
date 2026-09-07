@@ -142,3 +142,50 @@
 // Closure means:
 
 // Function + its surrounding memory = Closure
+
+
+// Task 1
+
+// const counter = createCounter();
+
+// counter.increment(); // 1
+// counter.increment(); // 2
+// counter.increment(); // 3
+
+// counter.decrement(); // 2
+
+// console.log(counter.getCount()); // 2
+
+
+// solution of task 1
+
+
+function createCounter() {
+    let count = 0;
+
+    return {
+        increment: function () {
+            count++;
+        },
+
+        decrement: function () {
+            count--;
+        },
+
+        getCount: function () {
+            return count;
+        }
+    };
+}
+
+const counter = createCounter();
+
+counter.increment();
+counter.increment();
+counter.increment();
+
+counter.decrement();
+
+console.log(counter.getCount()); // 2
+
+

@@ -16,9 +16,9 @@ async function loadCategories() {
 
 
     const res = await fetch("https://openapi.programming-hero.com/api/categories");
-    const data = await res.json();
-
+    const data = await res.json();    
     console.log(data);
+    cateGoriesContainer.innerHTML = ""
     
 
 }
