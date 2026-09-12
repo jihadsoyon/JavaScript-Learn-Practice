@@ -728,23 +728,98 @@ const employees = [
 ];
 
 
-function analyzeEmployees(employees) {
+function analyzeEmployees(...employees) {
 
     const employeee = [...employees]
 const newEmployees = employeee.filter(employe => {
-    return employe.active && employe.age > 18;
+    return employe.active && employe.age >= 18;
 })
 
 
 const finalEmployees = newEmployees.map(employ => {
-    return employ.name, employ.salary, employ.skills.length
+    return {  
+        name: employ.name,
+        salary:  employ.salary, 
+        skillCount:  employ.skills.length
+        }
+
+
+
         
     
 })
 
-return finalEmployees;
+
+const totalSlary = newEmployees.reduce((acc, empoy)=>{
+  return acc + (empoy.salary)
+}, 0)
+
+const highestSalary = newEmployees.find(emplo => emplo.salary > 80000)
+
+return {
+  finalEmployees,
+  totalSlary,
+  highestSalary
+};
 
 }
 
 
-console.log(analyzeEmployees(employees));
+console.log(analyzeEmployees(...employees));
+
+
+
+// 💀💀 FINAL INTERVIEW BOSS
+
+var x = 10;
+
+function outer() {
+
+    let x = 20;
+
+    return function inner() {
+
+        let x = 30;
+
+        return function () {
+
+            x++;
+
+            return x;
+        };
+    };
+}
+
+const a = outer(); 
+const b = a();
+const c = a();
+
+console.log(b()); // 31
+console.log(b());  //32
+console.log(c());  //32
+
+const arr = [1, 2, 3];
+
+function modify(value) {
+
+    value.push(4);
+
+    value = [10, 20];
+
+    return value;
+}
+
+console.log(modify(arr)); // [10, 20]
+console.log(arr);   //[1, 2, 3, 4]
+
+function sum() {
+
+    const numbers = [...arguments];
+
+    return numbers
+        .filter(num => num % 2 === 0)
+        .map(num => num * 2)
+        .reduce((acc, num) => acc + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4, 5, 6)); //24
