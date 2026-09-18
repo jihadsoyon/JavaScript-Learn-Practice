@@ -1,23 +1,64 @@
 const STORAGE_KEY = 'numbers';
 
-// localStorage থেকে array পড়া — যদি কিছু না থাকে, খালি array রিটার্ন করবে
 const getNumbers = () => {
     const stored = localStorage.getItem(STORAGE_KEY);
     return stored ? JSON.parse(stored) : [];
 };
 
-// array-কে localStorage-এ save করা (JSON string হিসেবে, কারণ localStorage শুধু string রাখতে পারে)
+
 const saveNumbers = (numbers) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(numbers));
 };
 
-// নতুন random number generate করে array-তে push করা
+const renderNumbers = () => {
+    const numbers = getNumbers();
+    const listContainer = document.getElementById('numberList');
+    listContainer.innerHTML = '';
+
+    if (numbers.length === 0) {
+        listContainer.innerHTML = '<li>কোনো number নেই</li>';
+        return;
+    }
+
+    numbers.forEach((num, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <span>${num}</span>
+            <button data-index="${index}" class="deleteBtn">Delete</button>
+        `;
+        listContainer.append(li);
+    });
+};
+
 const addNumber = () => {
     const numbers = getNumbers();
     const newNumber = Math.ceil(Math.random() * 100);
 
     numbers.push(newNumber);
     saveNumbers(numbers);
+    renderNumbers();
 };
 
+const deleteNumber = (index) => {
+    const numbers = getNumbers();
+    numbers.splice(index, 1);
+    saveNumbers(numbers);
+    renderNumbers();
+};
+
+const clearNumbers = () => {
+    localStorage.removeItem(STORAGE_KEY);
+    renderNumbers();
+};
+
+document.getElementById('numberList').addEventListener('click', (e) => {
+    if (e.target.classList.contains('deleteBtn')) {
+        const index = e.target.dataset.index;
+        deleteNumber(index);
+    }
+});
+
 document.getElementById('addBtn').addEventListener('click', addNumber);
+document.getElementById('clearBtn').addEventListener('click', clearNumbers);
+
+renderNumbers();
