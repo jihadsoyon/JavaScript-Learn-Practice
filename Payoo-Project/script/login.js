@@ -10,7 +10,7 @@ document.getElementById("login-btn").addEventListener("click", function(){
     //match pin & number & validate
     if(mobileNUmber.length === 11 && pin === "1234"){
         alert("log in success");
-        window.location.assign("/Payoo-Project/home.html")
+        window.location.assign("home.html")
     }else{
         alert("Log in failed");
         return;
