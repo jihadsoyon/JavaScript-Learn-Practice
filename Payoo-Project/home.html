@@ -94,15 +94,16 @@
                     <br>
                     <label class="label text-neutral font-bold">Bank Acoount Number</label>
                     <input id="add-money-number" maxlength="11" minlength="11" type="number"
-                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 11 Digit Agent Number" value="01234567890"/>
+                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 11 Digit Agent Number"
+                        value="01234567890" />
                     <br>
                     <label class="label text-neutral font-bold">Amount to Add</label>
                     <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 w-full"
                         placeholder="Enter amount to add" />
                     <br>
                     <label class="label text-neutral font-bold">Pin Number</label>
-                    <input id="add-money-pin" maxlength="4" type="password" class="input rounded-full bg-base-200 w-full"
-                        placeholder="Enter 4 Digit Pin" value="1234" />
+                    <input id="add-money-pin" maxlength="4" type="password"
+                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 Digit Pin" value="1234" />
 
                     <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
                 </fieldset>
@@ -140,15 +141,16 @@
         <div class="card bg-base-100 w-full shadow rounded-2xl">
             <div class="card-body">
                 <fieldset class="fieldset">
-                     <label class="label text-neutral font-bold">User Account Number</label>
+                    <label class="label text-neutral font-bold">User Account Number</label>
                     <input id="transfer-number" maxlength="11" minlength="11" type="number"
-                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 11 digit number" value="01234567890"/>
+                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 11 digit number"
+                        value="01234567890" />
                     <br>
                     <label class="label text-neutral font-bold">Amount</label>
                     <input id="transfer-amount" maxlength="11" minlength="11" type="number"
                         class="input rounded-full bg-base-200 w-full" placeholder="Enter amount to transfer" />
                     <br>
-                   
+
                     <label class="label text-neutral font-bold">Pin Number</label>
                     <input id="transfer-pin" maxlength="4" type="password" class="input rounded-full bg-base-200 w-full"
                         placeholder="Enter 4 digit pin number" value="1234" />
@@ -165,9 +167,9 @@
         <div class="card bg-base-100 w-full shadow rounded-2xl">
             <div class="card-body">
                 <fieldset class="fieldset">
-                     <label class="label text-neutral font-bold">Enter Bonus Coupon</label>
-                    <input id="bonus-coupon" type="text"
-                        class="input rounded-full bg-base-200 w-full" placeholder="Enter your coupon" value="SubhanAllah33"/>
+                    <label class="label text-neutral font-bold">Enter Bonus Coupon</label>
+                    <input id="bonus-coupon" type="text" class="input rounded-full bg-base-200 w-full"
+                        placeholder="Enter your coupon" value="SubhanAllah33" />
                     <br>
 
                     <button id="bonus-btn" class="btn btn-primary mt-4 rounded-full">Get Bonus</button>
@@ -192,7 +194,8 @@
                     <br>
                     <label class="label text-neutral font-bold">Biller Account Number</label>
                     <input id="pay-bill-number" maxlength="11" minlength="11" type="number"
-                        class="input rounded-full bg-base-200 w-full" placeholder="Enter account number" value="01234567890"/>
+                        class="input rounded-full bg-base-200 w-full" placeholder="Enter account number"
+                        value="01234567890" />
                     <br>
                     <label class="label text-neutral font-bold">Amount to Pay</label>
                     <input id="pay-bill-amount" type="number" class="input rounded-full bg-base-200 w-full"
@@ -209,13 +212,30 @@
     </section>
 
     <section id="history" class="w-11/12 mx-auto py-5 ">
-    <h2 class="text-xl font-bold mb-5">Transactions</h2>
-    <div class="" id="history-container">
-      <div class="transaction-card p-5 bg-base-100">
+        <h2 class="text-xl font-bold mb-5">Transactions</h2>
+        <div class="" id="history-container">
+            <div class="transaction-card p-5 bg-base-100">
 
-      </div>
-    </div>
+            </div>
+        </div>
     </section>
+    <!-- Footer -->
+    <footer class="w-11/12 mx-auto py-8 mt-10 border-t-2 border-gray-300">
+        <div class="grid grid-cols-2 gap-6">
+            <div>
+                <img src="assets/logo.png" alt="" class="w-[50px] mb-2">
+                <p class="text-neutral/50 text-sm">Fast, secure and reliable digital payments for everyone.</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-2">Quick Links</h3>
+                <ul class="text-neutral/50 text-sm flex flex-col gap-1">
+                    <li><a href="#" class="link link-hover">About Us</a></li>
+                    <li><a href="#" class="link link-hover">Support</a></li>
+                    <li><a href="#" class="link link-hover">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="./script/cashout.js"></script>
     <script src="./script/machine.js"></script>
