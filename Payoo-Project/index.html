@@ -18,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        *{
-            font-family: "Outfit", sans-serif; 
+        * {
+            font-family: "Outfit", sans-serif;
 
         }
     </style>
@@ -34,17 +34,46 @@
             <div class="card-body">
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Mobile Number</label>
-                    <input id="input-number" maxlength="11" minlength="11" type="number" class="input rounded-full bg-base-200" placeholder="Enter Your Number" />
+                    <input id="input-number" maxlength="11" minlength="11" type="number"
+                        class="input rounded-full bg-base-200" placeholder="Enter Your Number" />
                     <br>
                     <label class="label text-neutral font-bold">4 Digit Pin</label>
-                    <input id="input-pin" maxlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" value="1234" />
+                    <input id="input-pin" maxlength="4" type="password" class="input rounded-full bg-base-200"
+                        placeholder="Enter 4 Digit Pin" value="1234" />
                     <div><a class="link link-hover font-bold">Forgot password?</a></div>
                     <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
                 </fieldset>
             </div>
         </div>
     </div>
+    <footer class="w-11/12 mx-auto py-8 mt-10 border-t-2 border-gray-300">
+        <div class="grid grid-cols-2 gap-6">
+            <div>
+                <img src="assets/logo.png" alt="" class="w-[50px] mb-2">
+                <p class="text-neutral/50 text-sm">Fast, secure and reliable digital payments for everyone.</p>
+                <div class="flex gap-3 mt-3">
+                    <a href="#" class="btn btn-circle btn-sm btn-primary btn-soft"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-circle btn-sm btn-primary btn-soft"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="btn btn-circle btn-sm btn-primary btn-soft"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold mb-2">Quick Links</h3>
+                <ul class="text-neutral/50 text-sm flex flex-col gap-1">
+                    <li><a href="#" class="link link-hover">About Us</a></li>
+                    <li><a href="#" class="link link-hover">Support</a></li>
+                    <li><a href="#" class="link link-hover">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-neutral/40 text-xs mt-6 pt-4 border-t border-gray-200">
+            &copy; 2026 Payoo. All rights reserved.
+        </div>
+    </footer>
     <script src="./script/login.js"></script>
-    </body>
+</body>
 
 </html>
